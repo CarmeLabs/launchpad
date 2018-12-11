@@ -1,0 +1,23 @@
+{% extends "app/newlayout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+	<div class="help">
+		<a class = help-button><img src="{% static 'app/img/Help.png' %}" width="40px"; height="40px";></a>
+	</div>
+
+
+	<div class="welcome-block">
+		<h2 class = "welcome-header">Welcome to the User Dashboard!</h2>
+		<p class = "welcome">To get started, "select either the Create Form" or the "Azure Chatbot buttons to start the creation process. Then follow the on-screen instructions to begin generating your desired configurations.  And if you need any help, click the "?" button to receive addtional info regarding the part of the process you are currently on and how to proceed further.</p>
+		
+		<p class="welcome">If you are still unsure on how to proceed, feel free to check out the "Docs" tab above to be redirected to our detail documentation regarding Carme. And if there are any other issues, click the "Contact Us" button below to receive further assistance.</p>
+	</div>
+
+
+	<div class="entry-buttons">
+		<a class="btn" data-value="create" href="form">Create Form</a>
+		<div class="divider"></div>
+		<a class="btn" data-value="chatbot" href="chatbot">Azure Chatbot</a>
+	</div>
+{% endblock %}

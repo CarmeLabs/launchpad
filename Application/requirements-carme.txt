@@ -1,0 +1,20 @@
+#requirements from Carme project
+chardet==3.0.4
+click==6.7
+decorator==4.2.1
+docker==3.0.0
+docker-pycreds==0.2.1
+docopt==0.6.1
+gitdb==0.6.4
+idna==2.6
+nbconvert==5.3.*
+ordereddict==1.1
+public==0.0.65
+requests==2.18.4
+ruamel.yaml==0.15.44
+six==1.11.0
+smmap==0.9.0
+urllib3==1.22
+validators==0.12.1
+websocket-client==0.46.0
+git+https://github.com/grading/gradememaybe.git

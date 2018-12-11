@@ -1,0 +1,31 @@
+{% extends "app/newlayout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+	<div class="row">
+		<div class="dashboard-banner">
+		    <div class="col-lg-4 col-md-4 col-sm-12 images">
+			    <img src="{% static 'app/img/azure.png' %}" alt="azure logo" style="width: 90%; height: 90%"/> 
+		    </div>
+		    <div class="col-lg-8 col-md-8 col-sm-12 desc">
+		    	<h1>Welcome to the User Dashboard!</h1><br>
+			    <p>
+			       	To begin, select either the "Creation Form" or "Help Me!" buttons to start the creation process.
+		        	<br><br>
+		        	If you are aware of the specifications you desire and
+		        	are looking for the most direct and time-efficient
+		        	option, the "Creation Form" page is recommended.
+		        	<br><br>
+		        	If you are unsure of what exactly you are looking
+		        	for or are confused on how to go about creating your
+		        	desire configurations, the "Help Me!" option will be able to guide you through the process with the help of a chatbot.
+			    </p>
+			    <div class="dashboard-entry-buttons">
+					<a class="btn" data-value="create" href="form.html">Creation Form</a>
+					<div class="divider"></div>
+					<a class="btn" data-value="chatbot" href="chatbot.html">Help Me!</a>
+				</div>
+		    </div>
+		</div>
+	</div>
+{% endblock %}
